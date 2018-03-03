@@ -1,0 +1,27 @@
+.fmf-signin {
+     background: #ef8b3a;
+     color: #fff;
+     width: 40%;
+}
+
+.fmf-signin:active {
+	color: #fff !important;
+}
+
+.fmf-signin:hover {
+	color: #fff !important;
+}
+
+.signin-container {
+     margin-top: 40px;
+     margin-bottom: 50px;
+}
+
+.register-now {
+     color: #ef8b3a;
+}
+
+p {
+	margin: 0px !important;
+}
+

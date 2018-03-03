@@ -1,0 +1,103 @@
+/*MATERIAL INPUT*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+.mat-input{
+    margin: 2% auto;
+    width: 100%;
+    margin-bottom: 9%;   
+}
+.mat-input-outer{
+    display: table;
+    width: 100%;
+    position: relative;
+}
+.mat-input-outer input{
+    height: 30px;
+    border-radius: 0;
+    border: none;
+    width: 100%;    
+    padding: 0 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+.mat-input-outer label{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    left: 15px;
+    position: absolute;
+    transition: .2s;
+    color: #000;
+    cursor: text;
+    font-weight: normal;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+}
+.mat-input-outer .border{
+    height: 1px;
+    background: #bbb;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -ms-transition: .3s;
+}
+.mat-input-outer .border::before{
+    content: " ";
+    display: table;
+    height: 3px;
+    width: 0%;
+    background: transparent;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -ms-transition: .3s;
+    margin: 0 auto;
+}
+.mat-input-outer input:focus ~ .border{
+    background: transparent;
+}
+.mat-input-outer input:focus ~ .border::before{
+    width: 100%;
+    background: #42a692;
+    height: 2px;
+}
+.mat-input-outer input + label.active{
+    left: 5px;
+    top: -25px;
+    color: #bbb;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.center-content {
+     text-align: center;
+}
+
+.login {
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 250px; 
+    height: 240px;
+}
+
+
+@media (min-width: 1600px) {
+    .login {
+        padding: 58px !important;
+    }
+}
+
+
+@media(max-width: 360px) {
+    .logo {
+        width: 200px;
+        height: 200px;
+    }
+
+    .fmf-signin {
+         width: 60%;
+    }
+
+    .mat-input{
+        margin-bottom: 15%;   
+    }
+}
